@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3 {
+  margin: 0 0 20px;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+.headshot-img {
+  width:150px;
+  height:150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Buttons */
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.primary-btn {
+  background: #0077cc;
+  color: white;
+}
+
+.secondary-btn {
+  background: #f0f0f0;
+  color: #333;
+}
+
+/* Header Section */
+.hero {
+  background: linear-gradient(to right, #0077cc, #66ccff);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* About Section */
+.about {
+  background: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+.about h2 {
+  color: #0077cc;
+}
+
+.about p {
+  font-size: 1.17rem;
+}
+
+.about strong {
+  color: #0077cc; /* Use a subtle blue to highlight "Blue Sky Thinking" */
+  font-weight: bold;
+}
+
+/* Services Section */
+.services {
+  padding: 40px 20px;
+}
+
+.services h2 {
+  text-align: center;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 20px;
+}
+
+.service-item {
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.experience-footer {
+	text-align: center;
+}
+
+/* Why Work With Me Section */
+.why {
+  background: #e6f7ff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.pillar {
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background: #f9f9f9;   /*not in original design*/
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: #0077cc;
+}
+
+.testimonials p {
+  font-size: 1.17rem;
+}
+
+.testimonials strong {
+  color: #0077cc; /* Use a subtle blue to highlight "Blue Sky Thinking" */
+  font-weight: bold;
+}
+
+
+.testimonial {
+  margin-bottom: 20px;
+}
+
+/* CTA Section */
+.cta {
+  background: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer a {
+  color: #66ccff;
+  text-decoration: none;
+}
