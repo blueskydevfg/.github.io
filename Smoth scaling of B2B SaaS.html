@@ -7,9 +7,20 @@
   <title>Blue Sky SaaS | Scaling B2B SaaS Companies</title>
   <link rel="stylesheet" href="BlueSkyWork.css">
   <link rel="icon" href="https://media.licdn.com/dms/image/v2/D4D0BAQG3H9X8XTEZLQ/company-logo_100_100/company-logo_100_100/0/1732009968538?e=1740614400&v=beta&t=Qu2xbpeN_D4anrm1xEJUUcedy39vUG2ZUcUOGXvjvgU">
+  <script>
+    function openGetInTouchForm() {
+      document.getElementById("getintouchform").style.display = "block";
+      document.getElementById("btnFormOpen").style.visibility = "hidden";
+    }
+    
+    function closeGetInTouchForm() {
+      document.getElementById("getintouchform").style.display = "none";
+      document.getElementById("btnFormOpen").style.visibility = "visible";
+    }
+  </script>    
 </head>
-<body>
 
+<body>
   <!-- Header Section -->
   <header class="hero">
     <div class="container">
@@ -39,7 +50,7 @@
 			By <strong>leveraging experience</strong> in this stage we can <strong>mitigate risks</strong>, drive <strong>functional excellence</strong>, and unlock <strong>growth potential</strong>. Using my experience in product & engineering leadership from previous scaling journeys, I support founders and the team in <strong>building scalable, successful SaaS businesses</strong>. For investors, this means <strong>less risk, a faster ARR growth, and a a more smooth path to maximizing ROI</strong>.
 		  </p>
 		  <p>
-			Let’s unlock the full potential of your SaaS company together.
+			Let&apos;s unlock the full potential of your SaaS company together.
 		  </p>		  
 	  </div>
 	</section>
@@ -157,9 +168,9 @@
   <!-- Call to Action Section -->
   <section id="contact" class="cta">
     <div class="container">
-      <h2>Let’s Create Something Extraordinary</h2>
-      <p>Scaling a SaaS business can be tough, but you don’t have to do it alone. Let’s talk about where you want to go—and how I can help you get there.</p>
-      <a href="mailto:contact@blueskysaas.com" class="btn primary-btn" target="_new">Get in Touch</a>
+      <h2>Let&apos;s Create Something Extraordinary</h2>
+      <p>Scaling a SaaS business can be tough, but you don&apos;t have to do it alone. Let&apos;s talk about where you want to go—and how I can help you get there.</p>
+      <div class="getintouchtext" onclick="openGetInTouchForm()">Get in Touch</div>
     </div>
   </section>
 
@@ -170,6 +181,15 @@
       <p><a href="https://www.linkedin.com/in/goldbach/" target="_new">LinkedIn</a> | <a href="mailto:fg@blueskysaas.com">Email</a></p>
     </div>
   </footer>
+
+  <!-- Get In Touch Button -->
+  <button class="form-open-button" id="btnFormOpen" onclick="openGetInTouchForm()">Get in Touch</button>
+
+  <!-- Get In Touch Form -->
+  <div id="getintouchform" class="getintouchform">
+    <iframe id="getintouchframe" width="640px" height="800px" src="https://forms.office.com/e/Z7C0hEsHMS?nocookieembed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe><br/>
+    <button type="button" class="form-close-button" id="btnFormClose" onclick="closeGetInTouchForm()">Close</button>
+  </div>
 
 </body>
 </html>
