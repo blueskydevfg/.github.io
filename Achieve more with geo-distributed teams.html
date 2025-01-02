@@ -129,7 +129,7 @@
     <div class="container">
       <h2>Let’s achieve more with geo-distributed teams</h2>
       <p>Scaling with geo-distributed teams can be challenging, but you don’t have to do it alone. Let’s talk about where you want to go — and how I can help you get there.</p>
-      <a href="mailto:fg@blueskywork.com" class="btn primary-btn" target="_new">Get in Touch</a>
+      <a href="#" class="btn primary-btn" onClick = "document.getElementById('getintouch').style.height = '600px';">Get in Touch</a><br/>
     </div>
   </section>
 
@@ -137,9 +137,27 @@
   <footer class="footer">
     <div class="container">
       <p>© 2024 Blue Sky Work. All Rights Reserved.</p>
-      <p><a href="https://www.linkedin.com/in/goldbach/" target="_new">LinkedIn</a> | <a href="mailto:fg@blueskywork.com">Email</a></p>
+      <p><a href="https://www.linkedin.com/in/goldbach/" target="_new">LinkedIn</a></p>
     </div>
   </footer>
+
+    <!-- Get In Touch Button -->
+  <button class="form-open-button" onclick="openGetInTochForm()">Get in Touch</button>
+
+  <!-- Get In Touch Form -->
+  <div id="getintouchform" class="getintouchform">
+    <iframe id="getintouchframe" width="640px" height="800px" src="https://forms.office.com/e/Z7C0hEsHMS?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+  </div>
+
+  <script>
+    function openGetInTochForm() {
+      document.getElementById("getintouchform").style.display = "block";
+    }
+    
+    function openGetInTochForm() {
+      document.getElementById("getintouchform").style.display = "none";
+    }
+  </script>    
 
 </body>
 </html>
