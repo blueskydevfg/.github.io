@@ -7,9 +7,20 @@
   <title>Blue Sky Work | Achieve more with Geo-Distributed teams</title>
   <link rel="stylesheet" href="BlueSkyWork.css">
   <link rel="icon" href="https://media.licdn.com/dms/image/v2/D4D0BAQG3H9X8XTEZLQ/company-logo_100_100/company-logo_100_100/0/1732009968538?e=1740614400&v=beta&t=Qu2xbpeN_D4anrm1xEJUUcedy39vUG2ZUcUOGXvjvgU">
+  <script>
+    function openGetInTouchForm() {
+      document.getElementById("getintouchform").style.display = "block";
+      document.getElementById("btnFormOpen").style.visibility = "hidden";
+    }
+    
+    function closeGetInTouchForm() {
+      document.getElementById("getintouchform").style.display = "none";
+      document.getElementById("btnFormOpen").style.visibility = "visible";
+    }
+  </script>    
 </head>
-<body>
 
+<body>
   <!-- Header Section -->
   <header class="hero">
     <div class="container">
@@ -34,7 +45,7 @@
 			I bring 20+ years of <strong>experience building and leading distributed teams</strong></strong> across Europe and Asia. I can help your team <strong>improve workflows</strong> to connect people across locations, <strong>improve collaboration</strong>, and ensure your teams are <strong>not only productive but deeply engaged</strong>. I specialize in transforming teams and processes, improving cross-location collaboration, and aligning distributed teams with business goals. I ensure minimal disruption while <strong>delivering long-term improvements in team engagement, productivity, and knowledge-sharing</strong>.
 		  </p>
 		  <p>
-			Let’s work together to make your geo-distributed teams achieve more and your organization scale better.
+			Let&apos;s work together to make your geo-distributed teams achieve more and your organization scale better.
 		  </p>
 	  </div>
 	</section>
@@ -127,9 +138,9 @@
   <!-- Call to Action Section -->
   <section id="contact" class="cta">
     <div class="container">
-      <h2>Let’s achieve more with geo-distributed teams</h2>
-      <p>Scaling with geo-distributed teams can be challenging, but you don’t have to do it alone. Let’s talk about where you want to go — and how I can help you get there.</p>
-      <a href="#" class="btn primary-btn" onClick = "document.getElementById('getintouch').style.height = '600px';">Get in Touch</a><br/>
+      <h2>Let&apos;s achieve more with geo-distributed teams</h2>
+      <p>Scaling with geo-distributed teams can be challenging, but you don&apos;t have to do it alone. Let&apos;s talk about where you want to go — and how I can help you get there.</p>
+      <div class="getintouchtext" onclick="openGetInTouchForm()">Get in Touch</div>
     </div>
   </section>
 
@@ -142,22 +153,13 @@
   </footer>
 
     <!-- Get In Touch Button -->
-  <button class="form-open-button" onclick="openGetInTochForm()">Get in Touch</button>
+  <button class="form-open-button" id="btnFormOpen" onclick="openGetInTouchForm()">Get in Touch</button>
 
   <!-- Get In Touch Form -->
   <div id="getintouchform" class="getintouchform">
-    <iframe id="getintouchframe" width="640px" height="800px" src="https://forms.office.com/e/Z7C0hEsHMS?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+    <iframe id="getintouchframe" width="640px" height="800px" src="https://forms.office.com/e/Z7C0hEsHMS?nocookieembed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe><br/>
+    <button type="button" class="form-close-button" id="btnFormClose" onclick="closeGetInTouchForm()">Close</button>
   </div>
-
-  <script>
-    function openGetInTochForm() {
-      document.getElementById("getintouchform").style.display = "block";
-    }
-    
-    function openGetInTochForm() {
-      document.getElementById("getintouchform").style.display = "none";
-    }
-  </script>    
 
 </body>
 </html>

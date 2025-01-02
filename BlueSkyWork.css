@@ -166,6 +166,12 @@ p {
   padding: 40px 20px;
 }
 
+.getintouchtext {
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 /* Footer */
 .footer {
   background: #333;
@@ -191,6 +197,22 @@ p {
   bottom: 23px;
   right: 28px;
   width: 280px;
+}
+
+.form-close-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.form-open-button:hover, .form-close-button:hover {
+  opacity: 1;
 }
 
 /* The popup form - hidden by default */
