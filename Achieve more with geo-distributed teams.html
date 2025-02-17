@@ -9,13 +9,27 @@
   <link rel="icon" href="BlueSkyWork-LinkedIn-Icon.png">
   <script>
     function openGetInTouchForm() {
-      document.getElementById("getintouchform").style.display = "block";
-      document.getElementById("btnFormOpen").style.visibility = "hidden";
+        const form = document.getElementById("getintouchform");
+        const iframe = document.getElementById("getintouchframe");
+        
+        // Add visible class to form
+        form.classList.add('visible');
+        
+        // Reload the iframe content to ensure proper rendering
+        iframe.src = iframe.src;
+        
+        // Hide the open button
+        document.getElementById("btnFormOpen").style.visibility = "hidden";
     }
-    
+
     function closeGetInTouchForm() {
-      document.getElementById("getintouchform").style.display = "none";
-      document.getElementById("btnFormOpen").style.visibility = "visible";
+        const form = document.getElementById("getintouchform");
+        
+        // Remove visible class from form
+        form.classList.remove('visible');
+        
+        // Show the open button
+        document.getElementById("btnFormOpen").style.visibility = "visible";
     }
   </script>    
 </head>
